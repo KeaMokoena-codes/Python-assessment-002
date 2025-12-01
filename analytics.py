@@ -17,7 +17,15 @@ def filter_sales_above_threshold(sales: list, threshold: int):
     - Use a loop or list comprehension
     """
     # TODO: Write your code here
-    pass
+    for amount in sales:
+        if threshold > amount:
+            sales.append(amount)
+        else:
+            return [] 
+    return sales 
+print(filter_sales_above_threshold([200, 500, 75], 100)) 
+ 
+    
 
 
 def count_product_codes(codes: list, prefix: str):
@@ -33,7 +41,15 @@ def count_product_codes(codes: list, prefix: str):
     - Return 0 if no matches found
     """
     # TODO: Write your code here
-    pass
+    # codes = []
+    count = 0
+    for code in codes:
+        if code.startswith("SERV"):
+            count += 1
+        elif code.startswith("PROD"):
+            count += 1
+    return count
+print(count_product_codes(["PROD-001", "PROD-002", "SERV-001"], "PROD"))
 
 
 def calculate_moving_average(numbers: list, window_size: int):
@@ -51,7 +67,15 @@ def calculate_moving_average(numbers: list, window_size: int):
     - Return 0.0 for empty list
     """
     # TODO: Write your code here
-    pass
+    for _ in numbers:
+        if len(numbers) < window_size:
+            average = sum(numbers) / window_size
+        else:
+            average = sum(numbers[-1]) / window_size
+    return average
+print(calculate_moving_average([40, 50], 3))       
+
+    
 
 
 # ==========================================
