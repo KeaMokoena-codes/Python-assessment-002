@@ -30,7 +30,6 @@ def count_product_codes(codes: list, prefix: str):
     Example: count_product_codes(["PROD-001", "PROD-002", "SERV-001"], "PROD") → 2
     
     Logic:
-    - Use the .startswith() method or string slicing
     - Return 0 if no matches found
     """
     # TODO: Write your code here
@@ -50,7 +49,6 @@ def calculate_moving_average(numbers: list, window_size: int):
     - If the list has fewer elements than window_size, use all available elements
     - Return the average as a float rounded to 2 decimal places
     - Return 0.0 for empty list
-    - Use list slicing to get the last N elements: numbers[-window_size:]
     """
     # TODO: Write your code here
     pass
@@ -72,7 +70,6 @@ def get_top_seller(sales_data: dict):
     Logic:
     - If dictionary is empty, return "No Data"
     - If there's a tie, return the name that appears first alphabetically
-    - Hint: You can use max() with a key parameter, or loop through items
     """
     # TODO: Write your code here
     pass
